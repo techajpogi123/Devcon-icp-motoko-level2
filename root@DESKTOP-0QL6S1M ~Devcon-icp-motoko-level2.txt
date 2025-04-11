@@ -1,0 +1,241 @@
+Windows Subsystem for Linux is now available in the Microsoft Store!
+You can upgrade by running 'wsl.exe --update' or by visiting https://aka.ms/wslstorepage
+Installing WSL from the Microsoft Store will give you the latest WSL updates, faster.
+For more information please visit https://aka.ms/wslstoreinfo
+
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Apr 11 10:52:23 +08 2025
+
+  System load:  0.0                Processes:             9
+  Usage of /:   0.6% of 250.98GB   Users logged in:       0
+  Memory usage: 3%                 IPv4 address for eth0: 172.28.82.187
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/root/.hushlogin file.
+root@DESKTOP-0QL6S1M:~# cd ~
+root@DESKTOP-0QL6S1M:~# git clome <https://github.com/techajpogi123/Devcon-icp-motoko-level2.git>
+-bash: syntax error near unexpected token `newline'
+root@DESKTOP-0QL6S1M:~# cd ~
+root@DESKTOP-0QL6S1M:~# git clone <https://github.com/techajpogi123/Devcon-icp-motoko-level2.git>
+-bash: syntax error near unexpected token `newline'
+root@DESKTOP-0QL6S1M:~# cd ~
+root@DESKTOP-0QL6S1M:~# git clone https://github.com/techajpogi123/Devcon-icp-motoko-level2.git
+Cloning into 'Devcon-icp-motoko-level2'...
+remote: Enumerating objects: 125, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 125 (delta 45), reused 33 (delta 33), pack-reused 68 (from 1)
+Receiving objects: 100% (125/125), 1.82 MiB | 1.96 MiB/s, done.
+Resolving deltas: 100% (47/47), done.
+root@DESKTOP-0QL6S1M:~# cd
+root@DESKTOP-0QL6S1M:~# cd devcon
+-bash: cd: devcon: No such file or directory
+root@DESKTOP-0QL6S1M:~# cd devcon-icp-motoko-level2
+-bash: cd: devcon-icp-motoko-level2: No such file or directory
+root@DESKTOP-0QL6S1M:~# cd Devcon-icp-motoko-level2
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# npm i webpac
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 404 packages, and audited 405 packages in 5s
+
+85 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 11.3.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.3.0
+npm notice To update run: npm install -g npm@11.3.0
+npm notice
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# npm i webpack
+
+removed 7 packages, changed 1 package, and audited 398 packages in 1s
+
+83 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx identity new Devcon-icp-motoko-level2
+Creating the "default" identity.
+WARNING: The "default" identity is not stored securely. Do not use it to control a lot of cycles/ICP.
+To create a more secure identity, create and use an identity that is protected by a password using the following commands:
+    dfx identity new <my-secure-identity-name> # creates a password protected identity
+    dfx identity use <my-secure-identity-name> # uses this identity by default
+
+  - generating new key at /root/.config/dfx/identity/default/identity.pem
+Your seed phrase: half exist embody teach nut two cactus raw possible unable decrease weapon license scrap give sample pipe rabbit flip clap achieve special yellow predict
+This can be used to reconstruct your key in case of emergency, so write it down in a safe place.
+Created the "default" identity.
+Please enter a passphrase for your identity: [hidden]
+Encryption complete.
+Your seed phrase for identity 'Devcon-icp-motoko-level2': favorite pink enjoy ancient certain cupboard enemy polar heart chief account ask coffee ethics forum level copy lion design crew river scout across tape
+This can be used to reconstruct your key in case of emergency, so write it down in a safe place.
+Created identity: "Devcon-icp-motoko-level2".
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx identity whoami
+default
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx killall
+Killed 0 processes
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx start --background --clean
+Running dfx start for version 0.25.1
+Using the default configuration for the local shared network.
+⠂ Starting local network...
+Replica API running in the background on 127.0.0.1:4943
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx deploy
+Deploying all canisters.
+Created a wallet canister on the "local" network for user "default" with ID "bnz7o-iuaaa-aaaaa-qaaaa-cai"
+portfolio_template_backend canister created with canister id: bkyz2-fmaaa-aaaaa-qaaaq-cai
+portfolio_template_frontend canister created with canister id: bd3sg-teaaa-aaaaa-qaaba-cai
+Installed code for canister portfolio_template_backend, with canister ID bkyz2-fmaaa-aaaaa-qaaaq-cai
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+Installed code for canister portfolio_template_frontend, with canister ID bd3sg-teaaa-aaaaa-qaaba-cai
+Deployed canisters.
+URLs:
+  Frontend canister via browser:
+    portfolio_template_frontend:
+      - http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=bd3sg-teaaa-aaaaa-qaaba-cai (Legacy)
+  Backend canister via Candid interface:
+    portfolio_template_backend: http://127.0.0.1:4943/?canisterId=be2us-64aaa-aaaaa-qaabq-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:8000
+bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:8000: command not found
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx deploy
+Deploying all canisters.
+All canisters have already been created.
+Module hash b8abb080b69b054dd3ba4c6c064a05139d66585c6c4236a21060543ddb8e35e6 is already installed.
+Upgraded code for canister portfolio_template_backend, with canister ID bkyz2-fmaaa-aaaaa-qaaaq-cai
+Module hash 865eb25df5a6d857147e078bb33c727797957247f7af2635846d65c5397b36a6 is already installed.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+Upgraded code for canister portfolio_template_frontend, with canister ID bd3sg-teaaa-aaaaa-qaaba-cai
+Deployed canisters.
+URLs:
+  Frontend canister via browser:
+    portfolio_template_frontend:
+      - http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=bd3sg-teaaa-aaaaa-qaaba-cai (Legacy)
+  Backend canister via Candid interface:
+    portfolio_template_backend: http://127.0.0.1:4943/?canisterId=be2us-64aaa-aaaaa-qaabq-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx identity devcon
+error: unrecognized subcommand 'devcon'
+
+Usage: dfx identity [OPTIONS] <COMMAND>
+
+For more information, try '--help'.
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx deploy
+Deploying all canisters.
+All canisters have already been created.
+Module hash b8abb080b69b054dd3ba4c6c064a05139d66585c6c4236a21060543ddb8e35e6 is already installed.
+Upgraded code for canister portfolio_template_backend, with canister ID bkyz2-fmaaa-aaaaa-qaaaq-cai
+Module hash 865eb25df5a6d857147e078bb33c727797957247f7af2635846d65c5397b36a6 is already installed.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+Upgraded code for canister portfolio_template_frontend, with canister ID bd3sg-teaaa-aaaaa-qaaba-cai
+Deployed canisters.
+URLs:
+  Frontend canister via browser:
+    portfolio_template_frontend:
+      - http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=bd3sg-teaaa-aaaaa-qaaba-cai (Legacy)
+  Backend canister via Candid interface:
+    portfolio_template_backend: http://127.0.0.1:4943/?canisterId=be2us-64aaa-aaaaa-qaabq-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# git clone https://github.com/yhnalx/Devcon-icp-motoko-level2.git
+Cloning into 'Devcon-icp-motoko-level2'...
+remote: Enumerating objects: 172, done.
+remote: Counting objects: 100% (82/82), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 172 (delta 70), reused 60 (delta 60), pack-reused 90 (from 1)
+Receiving objects: 100% (172/172), 1.83 MiB | 5.91 MiB/s, done.
+Resolving deltas: 100% (73/73), done.
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# code .
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2# dfx deploy
+Deploying all canisters.
+All canisters have already been created.
+Module hash b8abb080b69b054dd3ba4c6c064a05139d66585c6c4236a21060543ddb8e35e6 is already installed.
+Upgraded code for canister portfolio_template_backend, with canister ID bkyz2-fmaaa-aaaaa-qaaaq-cai
+Module hash 865eb25df5a6d857147e078bb33c727797957247f7af2635846d65c5397b36a6 is already installed.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+WARN: This project does not define a security policy for any assets.
+WARN: You should define a security policy in .ic-assets.json5. For example:
+WARN: [
+WARN:   {
+WARN:     "match": "**/*",
+WARN:     "security_policy": "standard"
+WARN:   }
+WARN: ]
+WARN: To disable the policy warning, define "disable_security_policy_warning": true in .ic-assets.json5.
+Upgraded code for canister portfolio_template_frontend, with canister ID bd3sg-teaaa-aaaaa-qaaba-cai
+Deployed canisters.
+URLs:
+  Frontend canister via browser:
+    portfolio_template_frontend:
+      - http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=bd3sg-teaaa-aaaaa-qaaba-cai (Legacy)
+  Backend canister via Candid interface:
+    portfolio_template_backend: http://127.0.0.1:4943/?canisterId=be2us-64aaa-aaaaa-qaabq-cai&id=bkyz2-fmaaa-aaaaa-qaaaq-cai
+root@DESKTOP-0QL6S1M:~/Devcon-icp-motoko-level2#
